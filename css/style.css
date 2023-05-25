@@ -2,7 +2,7 @@
     --primary-color: #EFDFDF;
     --secondary-color: #F4F2E9;
     --tertiary-color: #E0E5D8;
-    --accent-color: #734949;
+    --accent-color: #704747;
 }
 
 * {
@@ -26,6 +26,7 @@ body {
 main {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 footer {
@@ -48,11 +49,12 @@ a {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    margin-top: 1rem;
 }
 
 nav a {
-    margin: 1rem;
+    margin-right: 2rem;
 }
 
 nav a:hover {
@@ -97,7 +99,7 @@ hr {
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    margin: 5rem 0 2rem;
+    margin: 6rem auto;
 }
 
 .logo img {
@@ -111,6 +113,10 @@ hr {
     justify-content: center;
     max-width: 650px;
     margin: 0 auto 3rem;
+}
+
+.text-content p:first-of-type {
+    margin-top: 1rem;
 }
 
 .cta {
@@ -151,4 +157,34 @@ hr {
 
 .cat-3 {
     background: url("../images/beige_tiles.png");
+}
+
+@media (max-width: 680px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    .text-content {
+        margin: 4rem 2rem;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 470px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
 }
